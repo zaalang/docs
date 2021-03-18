@@ -12,4 +12,4 @@ Enums implement a scoped set of constants.
     Blue,
   }
 
-Each constant may further be assigned a value.
+Each constant may further be assigned a value. The enum representation type may be optionally be specified.
