@@ -8,6 +8,7 @@ Zaalang is a compiled language in the vein of c++, nothing groung breaking, just
 compiler with familiar usage and base functionality. 
 
 Features include :
+
 - basic types
 - arrays and structs
 - built-in tuples
