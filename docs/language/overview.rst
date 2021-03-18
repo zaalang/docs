@@ -1,14 +1,11 @@
-Overview
-========
+Language Reference
+==================
 
-zaalang is very similar to c++ in semantics, however the syntax has been tweeked in various places.
+zaalang is very similar to c++ in semantics, however the syntax has been changed in various places. 
 
-Functions are introduced with th 'fn' keyword, variables with the 'var' or 'let' keywords.
+.. toctree::
+   :maxdepth: 2
 
-The main entry point in a function named main.
-
-.. code-block:: zaalang
-
-   fn main() -> void;
-
-Source files are UTF-8 encoded.
+   types
+   literals
+   functions
