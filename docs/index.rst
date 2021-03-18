@@ -6,9 +6,10 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   :glob:
 
-   *
+   overview
+   language/overview
+   authors
 
 
 
