@@ -9,4 +9,5 @@ zaalang is very similar to c++ in semantics, however the syntax has been changed
    comments
    types
    literals
+   constants
    functions
