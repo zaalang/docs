@@ -19,8 +19,8 @@ Features include :
 - lambdas & captures
 - compile time execution
 
-Example Code
-------------
+Example
+-------
 
 .. code-block:: zaalang
 
