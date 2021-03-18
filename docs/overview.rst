@@ -1,4 +1,3 @@
-========
 Overview
 ========
 
@@ -19,8 +18,7 @@ Features include :
 - lambdas & captures
 - compile time execution
 
-Example
--------
+**Example**
 
 .. code-block:: zaalang
 
@@ -32,8 +30,7 @@ Example
    }
 
 
-YMMV
-----
+**YMMV**
 
 Now I can say with some certainty that anything I haven't personally tested likely won't work. And if you do manage 
 to get the compiler to not crash, the error messages will be completely useless. So, yes... there is more work to do.
