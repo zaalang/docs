@@ -20,5 +20,7 @@ Literals for primitive types include :
 +---------+-------------------+---------------------------------------+
 | array   | [1, 2, 3], [0; 8] | 8 is the repeat count                 |
 +---------+-------------------+---------------------------------------+
-| tuple   |                   | there is no builtin tuple literal     |
+| tuple   |                   | there are no builtin tuple literals   |
++---------+-------------------+---------------------------------------+
+| struct  |                   | there are no builtin struct literals  |
 +---------+-------------------+---------------------------------------+
