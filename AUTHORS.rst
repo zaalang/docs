@@ -1,4 +1,4 @@
 Authors
 -------
 
-* Peter
+* Peter Niekamp
