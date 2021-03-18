@@ -17,25 +17,7 @@ Structs implement composite types.
   }
 
 Every struct that wants to be instantiated needs a constructor and a destructor. These are not implicitly provided but may be defaulted.
-
-Templates
----------
-
-Structs may be generic over type arguments.
-
-.. code-block:: zaalang
-
-  struct Pixel<T>
-  {
-    int x,
-    int y,
-    T intensity,
-    
-    Pixel() = default;
-    Pixel(Pixel &&) = default;
-    ~Pixel() = default;
-  }
-  
+ 
 Methods
 -------
  
@@ -60,6 +42,24 @@ A struct method must explicitly declare a this parameter for access to member fi
 Using the call operator (.), this function may be called as px.move_to(3, 4). The call operator will also resolve to a free function in the scope of the 
 struct declaration if no method is found within the struct.
 
+Templates
+---------
+
+Structs may be generic over type arguments.
+
+.. code-block:: zaalang
+
+  struct Pixel<T>
+  {
+    int x,
+    int y,
+    T intensity,
+    
+    Pixel() = default;
+    Pixel(Pixel &&) = default;
+    ~Pixel() = default;
+  }
+
 Properties
 ----------
 
@@ -76,7 +76,7 @@ also be defined which will act as a setter function.
     fn x(this &) { return &this._x; }
     fn x=(this mut &, int x) { this._x = x; }
   }
- 
+
 Inheritance
 -----------
 
