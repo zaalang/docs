@@ -77,3 +77,14 @@ also be defined which will act as a setter function.
     fn x=(this mut &, int x) { this._x = x; }
   }
  
+Inheritance
+-----------
+
+A struct may derive from a single other type. Methods and fields of the base object will be available within scope or via an implicit "super" field.
+
+.. code-block:: zaalang
+
+  struct Pixel : Point
+  {
+    ...
+  }
