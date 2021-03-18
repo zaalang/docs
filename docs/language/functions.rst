@@ -73,3 +73,30 @@ Parameter packs allow a function to accept many parameters. All the parameters w
   fn bar<Args>(Args && ...args);
   
 Here, the args parameter will be a tuple, Args type will be the tuple type. For function bar, the tuple will contain qualified references.
+
+Match
+-----
+
+A function may specify a match clause. This clause generates constraints on the template parameters and may be used to infer literal types.
+
+.. code-block:: zaalang
+
+  fn foo<T>(T x)
+    match (T x) { u16(x); }
+  {
+  }
+
+Here, T is being constrained to a type for which the body "{ u16(x); }" compiles. If foo is called with an integer literal, eg. foo(42), 
+which has no runtime type, this will coerce the literal to a u16.
+
+Where
+-----
+
+A function may specify a where clause. This clause generates constraints on the functions viability. Must be a compile time expression.
+
+.. code-block:: zaalang
+
+  fn foo(#int x)
+    where x == 2 // known at compile time since x is a literal type (#)
+  {
+  }
