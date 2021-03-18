@@ -11,3 +11,6 @@ zaalang is very similar to c++ in semantics, however the syntax has been changed
    literals
    constants
    functions
+   enums
+   structs
+   unions
