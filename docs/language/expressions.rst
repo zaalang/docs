@@ -71,3 +71,32 @@ Function calls may use named parameters, specify explicit type arguments, and el
     foo(i: 15, j: 0); // named parameters
     bar<int>();       // explicit type argument
   }
+
+Lambdas
+-------
+
+Lambda expressions declare a callable object of lambda type. Non capturing lambdas may be converted to a function pointer.
+
+.. code-block:: zaalang
+
+  fn main()
+  {
+    fn foo(int i)          // foo is a lambda
+    {
+      return i;
+    }
+   
+    var bar = fn(int i) {  // bar is also a lambda
+      return 2*i;
+    };
+    
+    foo(2); // call foo
+    bar(3); // call bar
+    
+    var k = 99;
+    
+    fn baz[k](int i)       // baz is a lambda, captures k by reference
+    {
+      return k * i;
+    }
+  }
