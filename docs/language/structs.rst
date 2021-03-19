@@ -21,7 +21,7 @@ Every struct that wants to be instantiated needs a constructor and a destructor.
 Methods
 -------
  
-Functions may be declared within struct scope. These are then callable via scoped lookup and by member call operator (.).
+Functions may be declared within struct scope. These are then callable via scoped lookup and by member operator (.).
   
 .. code-block:: zaalang
 
@@ -39,7 +39,23 @@ Functions may be declared within struct scope. These are then callable via scope
   
 A struct method must explicitly declare a this parameter for access to member fields. (the "this mut &" is equivalent to "Pixel mut &this")
 
-Using the call operator (.), this function may be called as px.move_to(3, 4). The call operator will also resolve to a free function in the scope of the 
+Using the member operator (.), this function may be called as px.move_to(3, 4). The memberTemplates
+---------
+
+Structs may be generic over type arguments.
+
+.. code-block:: zaalang
+
+  struct Pixel<T>
+  {
+    int x,
+    int y,
+    T intensity,
+    
+    Pixel() = default;
+    Pixel(Pixel &&) = default;
+    ~Pixel() = default;
+  } operator will also resolve to a free function in the scope of the 
 struct declaration if no method is found within the struct.
 
 Templates
