@@ -15,3 +15,4 @@ zaalang is very similar to c++ in semantics, however the syntax has been changed
    structs
    unions
    expressions
+   statements
