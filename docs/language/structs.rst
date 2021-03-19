@@ -57,25 +57,6 @@ Structs may be generic over type arguments.
     Pixel() = default;
     Pixel(Pixel &&) = default;
     ~Pixel() = default;
-  } operator will also resolve to a free function in the scope of the 
-struct declaration if no method is found within the struct.
-
-Templates
----------
-
-Structs may be generic over type arguments.
-
-.. code-block:: zaalang
-
-  struct Pixel<T>
-  {
-    int x,
-    int y,
-    T intensity,
-    
-    Pixel() = default;
-    Pixel(Pixel &&) = default;
-    ~Pixel() = default;
   }
 
 Properties
