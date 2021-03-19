@@ -62,7 +62,7 @@ Structs may be generic over type arguments.
 Properties
 ----------
 
-Since a method without parameters may be called without the parentheses, a getter can naturally be defined. A method with the same name ending in '=' can 
+Since a method without parameters may be called without the parenthesis, a getter can naturally be defined. A method with the same name ending in '=' can 
 also be defined which will act as a setter function.
 
 .. code-block:: zaalang
