@@ -39,7 +39,9 @@ Functions may be declared within struct scope. These are then callable via scope
   
 A struct method must explicitly declare a this parameter for access to member fields. (the "this mut &" is equivalent to "Pixel mut &this")
 
-Using the member operator (.), this function may be called as px.move_to(3, 4). The memberTemplates
+Using the member operator (.), this function may be called as px.move_to(3, 4).
+
+Templates
 ---------
 
 Structs may be generic over type arguments.
